@@ -14,15 +14,15 @@ $(function() {
 			});
 		});
 
-		html += '<ul class="channels">';
+		html += '<ul class="thumbnails">';
 		for (var i = 0; i < channels.length; ++i) {
 			var channel = channels[i];
 
 			html += ''
 				+'<li>'
-					+'<a href="http://listen.di.fm/public2'+ channel.url +'.pls">'
+					+'<a class="thumbnail" href="http://listen.di.fm/public2'+ channel.url +'.pls">'
 						+'<img src="http:'+ channel.img +'" />'
-						+'<span>'+ channel.name +'</span>'
+						+'<h4>'+ channel.name +'</h4>'
 					+'</a>'
 				+'</li>'
 			;
